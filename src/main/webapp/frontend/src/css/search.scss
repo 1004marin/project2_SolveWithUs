@@ -1,0 +1,194 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@mixin font()
+{
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  text-align: left;
+  letter-spacing: normal;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+/*페이지1*/
+.search {
+  display: flex;
+  flex-direction: column;
+  height: 1069px;
+
+}
+/*following_feed 배경색 & title box*/
+.following_feed{
+  @extend .search;
+  background-color: #FEFDEA;
+}
+.follwoing_feed_box{
+  background-image: url(../img/following_feed_title_box.jpg);
+  background-repeat: no-repeat;
+  width: 1638px;
+  height: 200px;
+  background-size: cover;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+.following_feed_box-text{
+  margin: 25px 0 0 25px;
+  @include font();
+}
+.following_feed_box-text-01{
+  display: block;
+  font-size: 35px;
+  margin-bottom: 90px;
+color:#654B8D;
+}
+.following_feed_box-text-02{
+  font-size: 21px;
+  color: #4A4A4A;
+}
+
+
+.sort {
+  width: 700px;
+  margin: 70px auto; /*좌우 중앙배치*/
+  display: flex; /*넣어줘야 수평 맞음*/
+}
+.sort_title {
+  @include font();
+  font-family: "SpoqaHanSansNeo-Regular", serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.22;
+  text-align: center;
+  color: #384ea2;
+  margin-top: 7px;
+}
+.sort_option {
+  width: 205px;
+  height: 35px;
+  margin: 0px 60px 0 20px;
+  padding: 0 0 2px 9px;
+  border: solid 1.3px #b5b5b5;
+  @include font();
+  font-family: "SpoqaHanSansNeo-Regular", serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #4a4a4a;
+}
+.searchbttn {
+  width: 45px;
+  height: 45px;
+  margin-top: -6px;
+  opacity: 0.68;
+}
+/*문제박스*/
+.Qlist {
+  width: 90%;
+}
+.boxList {
+  margin: 30px 0;
+  margin-left: 10%;
+  text-align: center;
+}
+.boxList ul li {
+  display: inline-block;
+}
+.box {
+  width: 300px;
+  height: 330px;
+  padding: 20px 20px 50px 21px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  border: solid 0.2px #d4d4d4;
+  background-color: #fefefd;
+  margin-left: 30px;
+  display: inline-block;
+}
+.box_title {
+  @include font();
+  font-size: 21px;
+  height: 150px; /*제목길이 상관없이 일정하게 칸 유지*/
+  letter-spacing: 0.39px;
+  color: #141414;
+  line-height: 1.27;
+}
+.box_by {
+  @include font();
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.3px;
+  color: #4a4a4a;
+  margin-top: 2px;
+}
+.byname {
+  color: #654b8d;
+}
+/*해시태그*/
+.hashtag {
+  @include font();
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.47;
+  letter-spacing: 0.29px;
+  color: #5b5b5b;
+  margin-top: 60px;
+}
+/*각 문제 정보*/
+.info {
+  margin-top: 35px;
+  margin-left: -2px;
+  width: 300px;
+}
+.line1 {
+  height: 1px;
+  opacity: 0.61;
+  border: solid 1px #4a4a4a;
+  background-color: #4a4a4a;
+  margin-bottom: 5.8px;
+}
+.infoName {
+  @include font();
+  font-size: 14px;
+  line-height: 1.13;
+  letter-spacing: 0.23px;
+  color: #384ea2;
+  display: flex;
+  justify-content: space-between;
+}
+.infoName span {
+  margin-right: 40px;
+}
+.infoData span {
+  margin-right: 10px;
+}
+.line2 {
+  opacity: 0.21;
+  border: solid 0.01px #4a4a4aad;
+  margin-bottom: 5.8px;
+  margin-top: 5.8px;
+}
+.infoData {
+  @extend .infoName;
+  color: #5b5b5b;
+}
+.loading {
+  @include font();
+  margin-top: 100px;
+  font-family: "SpoqaHanSansNeo-Regular", serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.22;
+  color: #384ea2;
+}
+.heart{
+  text-align: center;
+  width:40px;
+  height: 40px;
+  margin-top: 30px;
+  cursor:pointer;
+}

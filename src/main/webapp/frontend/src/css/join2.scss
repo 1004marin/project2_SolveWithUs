@@ -1,0 +1,188 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin font()
+{
+    font-family: 'SpoqaHanSansNeo-Medium', serif;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4a4a4a;
+}
+.join2__outer
+{
+    overflow: hidden;
+    width: 1920px;
+    height: 1080px;
+    background-color: #fbfbfb;
+    overflow:hidden;
+}
+.join__block-04
+{
+    width: 1920px;
+    height: 782px;
+    margin: 1px 0 0;
+    background-color: #fefefe;
+    text-align: center;
+}
+.join__img-02
+{
+    width: 47px;
+    height: 47px;
+    margin: 50px 0px -10px -60px;
+}
+.join__block__text-06
+{
+    width: 140px;
+    height: 48px;
+    margin: 0 0 0 4px;
+    @include font();
+    font-size: 38px;
+    line-height: 1.26;
+}
+.join__main__text
+{
+    width: 600px;
+    height: 69px;
+    margin: 50px 453px 40px 560px;
+    @include font();
+    font-family: 'SpoqaHanSansNeo-Regular', serif;
+    font-size: 20px;
+    line-height: 1.25;
+    display:inline-block;
+}
+.join__main__text-01
+{
+    font-weight: 500;
+    font-size: 35px;
+    color: #654b8d;
+}
+.join__main__text-02
+{
+    font-size: 35px;
+    font-weight: 300;
+}
+.join__main__text-03
+{
+    font-weight: normal;
+}
+.EMAIL__text
+{
+    width: 200px;
+    height: 27px;
+    margin: 0 201px 4px 80px;
+    @include font();
+    font-size: 22px;
+    line-height: 1.23;
+    color: #5b5b5b;
+    display:inline-block;
+}
+.EMAIL__input
+{
+    width: 252px;
+    height: 42px;
+    margin: 4px 0 11px -60px;
+    padding: 0 0 0 10px;
+    background-color: #efefef;
+    border: 0px;
+}
+.join__block__button-02
+{
+    width: 45px;
+    height: 27px;
+    margin: 30px 1254px 0 855px;
+    padding: 15px 50px 16px;
+    border-radius: 101px;
+    border: solid 2px #384ea2;
+    display: table;
+    text-decoration-line: none;
+}
+
+/*반응형*/
+@media (max-width: 1919px) {
+
+    .join2__outer{
+        width: 100%;
+        position: relative;
+    }
+    .join__block-04{
+        width: 100%;
+        height: auto;
+        margin: 0px 0 0 0px;
+        padding: 0 0 0 0px;
+        text-align: center;/**/
+    
+    }
+    .join__img-02{
+        width: 31px;
+        height: 31px;
+        margin: 60px 1px -5px 0px;
+    }
+    .join__block__text-06
+{
+    width: 140px;
+    height: auto;
+    margin: 0 0 0 4px;
+    font-size: 27px;
+    
+}
+.join__main__text
+{
+    width: auto;
+    height: 69px;
+    margin: 50px 0px 0px 0px;
+    font-size: 16px;
+}
+.join__main__text-01
+{
+    width: 179px;
+    height: auto;
+    margin: 0px 0px 0 0px;
+    font-size: 21px;
+
+}
+.join__main__text-02
+{
+    font-size: 21px;
+}
+.EMAIL__text
+{
+    width: 170px;/**/
+    height: auto;
+    margin: 0 60px 0px 0px;
+    font-size: 17px;
+    display:inline-block;
+}
+.EMAIL__input
+{
+    width: 220px;
+    height: 34px;
+    margin: 4px 0 11px 0px;
+    padding: 0 0 0 10px;
+    background-color: #efefef;
+    border: 0px;
+}
+.join__block__button-02
+{
+    width: 30px;
+    height: 17px;
+    margin: 50px 0px 0px 110px;
+    padding: 8px 40px 17px;
+    border-radius: 101px;
+    border: solid 2px #384ea2;
+    display: inline-block;/**/
+}
+
+}
